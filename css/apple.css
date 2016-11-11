@@ -1,0 +1,479 @@
+body, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, input,  select, textarea,a,em {
+    margin:0;
+    padding:0;
+    font-weight: normal;
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    border:0;
+}
+a{
+    text-decoration: none;
+    /*text-align: center;*/
+}
+header{
+    width:100%;background-color: #444;
+    height:44px;
+}
+.large{
+    margin:0 auto;height:100%;width: 1150px;
+    display:none;
+}
+.large a{
+    float: left;text-align:center;line-height:44px;color:#fff;
+    padding: 0 10px;margin: 0 40px;display: block;
+}
+.tb{
+    width: 20px; height: 40px;
+}
+.men{
+    background-image: url(../img/index.png);
+}
+.apple{
+    background-image: url(../img/index1.png);
+}
+.bag{
+    background-image: url(../img/index2.png);
+}
+.small{
+    display: block;position: relative;z-index: 2;
+}
+.small .option{
+    float: left;
+}
+.small .menu{
+    width:10%;
+}
+.small .logo{
+    width:80%;text-align: center;
+}
+.small .logo a{
+    width: 20px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../img/index.png) ;
+}
+.small .text{
+    width: 20px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-image: url(../img/index2.png) ;
+}
+.small a{
+    text-align: left;
+    line-height:44px;
+    color: #fff;
+    padding: 5px;
+}
+.small .menu .son{
+    width:500px;height:500px;background:rgb(0,0,0);
+    padding-left: 20px;display: none;
+}
+.small .menu .son a{
+    width:100%;display: block;padding: 10px 0;line-height: 20px;
+    border-bottom: 1px solid #999;
+}
+.small .menu .son a:last-child{
+    border-bottom: 1px solid #fff;
+}
+
+
+.wheel{
+    height:580px;width:100%;
+    /* border:1px solid red;*/
+    position: relative;
+    overflow: hidden;
+}
+.box{
+    width:100%;height:100%;
+    position:relative;
+}
+.box .list{
+    position:absolute;
+    width:100%;height:100%;
+}
+.box .one{
+    background:#000 url(../img/event_small.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box .two{
+    background:#fff url(../img/macbookpro_small.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    left:100%;
+}
+.box .three{
+    background:#000 url(../img/iphone_large.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    left:100%;
+}
+.leftbtn{
+    position:absolute;
+    top:0;bottom:0;
+    left:20px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    text-align: center;margin: auto;
+    line-height: 50px;cursor: pointer;
+    background-color: #313335;
+    opacity: 0;
+}
+.leftbtn:hover{
+    opacity: 0.8;
+}
+.rightbtn{
+    position:absolute;
+    top:0;bottom:0;
+    right:20px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    text-align: center;margin: auto;
+    line-height: 50px;cursor: pointer;
+    background-color: #313335;
+    opacity: 0;
+}
+.leftbox{
+    height:100%;width:20%;
+    position: absolute;left:0;top:0;
+    transition:opacity 0.5s linear;
+    z-index: 1;
+}
+.leftbox:hover>.leftbtn{
+    opacity:1
+}
+.rightbox{
+    height:100%;width:20%;
+    position: absolute;right:0;top:0;
+    transition:opacity 0.5s linear;
+    z-index: 1;
+}
+.rightbox:hover>.rightbtn{
+    opacity:1;
+}
+.btns{
+    width:170px;heigth:10px;
+    position: absolute;left:0;right:0;bottom:50px;
+    margin:auto;
+    z-index: 999;
+    /*border:1px solid red;*/
+}
+.btns .btns-list{
+    float:left;width:50px;height:3px;
+    margin-right: 10px;
+    background-color:#1A1A1A;
+    /*border:1px solid #ffffff;*/
+    /* opacity: 0.3;*/
+    position:relative;
+}
+.btns .btns-list:last-child{
+    margin:0;
+}
+.btns .progress{
+    width:0;height:100%;
+    background-color:#808080;
+}
+.ban-txt{
+    width:100%;height:116px;
+    text-align: center;
+    color:#fff;
+    font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+}
+.ban-txt h1{
+    margin-top:20px;
+    font-size: 20px;
+}
+.ban-txt h2{
+    margin-top: 4px;
+    padding-left: 1em;
+    font-size: 24px;
+}
+.ban-txt .mac-log{
+    color:#000;
+    font-weight: bold;
+    font-size: 26px;
+}
+.ban-txt .mac-log-txt{
+    color:#000;
+    font-size:30px;
+}
+
+
+.back1{
+    background-image: url(../img/nike_watch_small.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back2{
+    background-image: url(../img/airpods_small.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back3{
+    background-image: url(../img/iphone_upgrade_small.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.back4{
+    background-image: url(../img/accessibility_small.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-List div[class*=col]{
+    height: 200px;
+    border:1px solid #fff;
+    background-size: contain;
+}
+/*中屏幕*/
+@media screen and (min-width:735px){
+    .large{
+        display: block;
+    }
+    .small{
+        display: none;
+    }
+    .box .one{
+        background:#000 url(../img/event_medium.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .box .two{
+        background:#fff url(../img/macbookpro_medium.jpg) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .box .three{
+        background:#000 url(../img/iphone_large.jpg) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .img-List div[class*=col]{
+        height: 200px;
+        border:1px solid #fff;
+        background-size: cover;
+    }
+    .back1{
+        background-image: url(../img/nike_watch_medium.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .back2{
+        background-image: url(../img/airpods_medium.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .back3{
+        background-image: url(../img/iphone_upgrade_medium.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .back4{
+        background-image: url(../img/accessibility_medium.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+/*大屏幕*/
+@media screen and (min-width:1075px){
+    .large{
+        display: block;
+    }
+    .small{
+        display: none;
+    }
+    .box .one{
+        background:#000 url(../img/event_large.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .box .two{
+        background:#fff url(../img/macbookpro_large.jpg) no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    .box .three{
+        background:#000 url(../img/iphone_large.jpg) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .img-List div[class*=col]{
+        height: 200px;
+        border:1px solid #fff;
+        background-size: contain;
+    }
+    .back1{
+        background-image: url(../img/nike_watch_large.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .back2{
+        background-image: url(../img/airpods_large.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .back3{
+        background-image: url(../img/iphone_upgrade_large.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .back4{
+        background-image: url(../img/accessibility_large.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+/*底部*/
+.footer {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: normal;
+    background-color: #f2f2f2;
+    color: #666;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.footer .foote {
+    max-width: 980px;
+    padding: 0 22px;
+    margin: auto;
+}
+.footer .foote p {
+    width: 100%;
+    padding: 10px 0;
+    color: #999;
+    font-size: 12px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.foots {
+    max-width: 980px;
+    padding: 0 22px;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+}
+.foots .foot {
+    float: left;
+    width: 20%;
+}
+.foots .foot h3 {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.66667;
+    color: #333333;
+}
+.foot a {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    text-decoration: none;
+    font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+}
+.foot a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+.foots1 {
+    max-width: 700px;
+    margin: auto;
+    display: none;
+}
+.foots2 {
+    width: 100%;
+    padding: 0 22px;
+}
+.foots2 li {
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+    cursor: pointer;
+    color: #333;
+}
+.foots2 li span {
+    float: right;
+}
+.foots2 li .footson {
+    display: none;
+}
+.foots2 li a {
+    width: 100%;
+    line-height: 25px;
+    display: block;
+    color: #666;
+}
+.foots2 li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+.footshop {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: normal;
+    background-color: #f2f2f2;
+    color: #666;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 20px 0;
+    font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+}
+.footshop .footshops {
+    max-width: 980px;
+    padding: 0 22px;
+    margin: auto;
+    margin-top: 5px;
+}
+.footshop .footshops p {
+    padding: 10px 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+.footshop .footshops a{
+    text-decoration: none;
+    color:#0098DA;
+
+}
+.footshops .link {
+    margin-left: 20px;
+}
+.footshops .link a {
+    padding: 0 10px;
+    color: #666;
+}
+.footshops a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+.footshops .china {
+    float: right;
+    padding: 0 15px;
+    background-image: url(../img/ic.png);
+    background-repeat: no-repeat;
+    background-position: 1px -1px;
+    text-indent: 8px;
+}
+@media screen and (max-width: 767px) {
+    .footer .foote {
+        max-width: none;
+    }
+    .footshop .footshops {
+        max-width: none;
+    }
+    .foots {
+        display: none;
+    }
+    .foots1 {
+        display: block;
+    }
+}
